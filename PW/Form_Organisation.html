@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <title>Organisation Registration</title>
     <link rel="shortcut icon" href="/donation.png">
@@ -17,8 +17,8 @@
     <img src="bg1.jpg" alt="Girl in a jacket" class="img">
     <header>
         <div class='container'>
-            <a href="/index.html"><img src="/don.png" id="globe" ></a>
-          </div> 
+            <a href="/index.html"><img src="/don.png" id="globe"></a>
+        </div>
     </header>
     <div class="main">
         <div class="register">
@@ -26,70 +26,79 @@
             <div id="register" type="post">
                 <label>Name of the Organisation:</label>
                 <br>
-                <input type="text" name="name" id="name" placeholder="Organisation">
+                <div class="formDesign" class="name">
+                <input type="text" name="name" id="name" placeholder="Organisation" required/>
                 <br><br>
-
+</div>
                 <label>Email ID:</label>
                 <br>
-                <input type="email" name="email" id="name" placeholder="Email ID">
+                <div class="formDesign" id="email">
+                <input type="email" name="email" id="name" placeholder="Email ID" required/>
                 <br><br>
-
+</div>
                 <label>Mobile Number:</label>
                 <br>
-                <input type="number" name="number" id="name" placeholder="Mobile Number">
+                <div class="formDesign" id="mbno.">
+                <input type="number" name="number" id="name" placeholder="Mobile Number" required/>
                 <br><br>
-                
-                    <label for="states">State:</label>
-                    <br>
-                    <select id="states" name="states">
-                        <option value="Andhra Pradesh">Andhra Pradesh</option>
-                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                        <option value="Assam">Assam</option>
-                        <option value="Bihar">Bihar</option>
-                        <option value="Chhattisgarh">Chhattisgarh</option>
-                        <option value="Goa">Goa</option>
-                        <option value="Gujarat">Gujarat</option>
-                        <option value="Haryana">Haryana </option>
-                        <option value="Himachal Pradesh">Himachal Pradesh</option>
-                        <option value="Jharkhand">Jharkhand</option>
-                        <option value="Karnataka">Karnataka</option>
-                        <option value="Kerala">Kerala</option>
-                        <option value="Madhya Pradesh">Madhya Pradesh</option>
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="Manipur">Manipur</option>
-                        <option value="Meghalaya">Meghalaya</option>
-                        <option value="Mizoram">Mizoram</option>
-                        <option value="Nagaland">Nagaland</option>
-                        <option value="Odisha">Odisha</option>
-                        <option value="Punjab">Punjab</option>
-                        <option value="Rajasthan">Rajasthan</option>
-                        <option value="Sikkim">Sikkim</option>
-                        <option value="Tamil Nadu">Tamil Nadu</option>
-                        <option value="Telangana">Telangana</option>
-                        <option value="Tripura">Tripura</option>
-                        <option value="Uttar Pradesh">Uttar Pradesh</option>
-                        <option value="Uttarakhand">Uttarakhand</option>
-                        <option value="West Bengal">West Bengal</option>
+</div>
+                <label for="states">State:</label>
+                <br>
+                <select id="states" name="states">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana </option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
 
-                    </select>
-                    <!-- <input type="text" name="email" id="name" placeholder="Address Line 1"> -->
-                
+                </select>
+                <!-- <input type="text" name="email" id="name" placeholder="Address Line 1"> -->
+
                 <br><br>
                 <label>Town,Street:</label>
-                <input type="text" name="email" id="name" placeholder="Address Line 2">
+                <div class="formDesign" class="town">
+                <input type="text" name="email" id="name" placeholder="Address Line 2" required/>
                 <br><br>
+            </div>
                 <label>Landmark,House/Block No.:</label>
-                <input type="text" name="email" id="name" placeholder="Address Line 3">
-                <br><br>
+                <div class="formDesign" class="house">
+                <input type="text" name="email" id="name" placeholder="Address Line 3" required/>
+                <br><br></div>
                 <label>Pincode:</label>
                 <br>
-                <input type="number" name="email" id="name" placeholder="Pincode">
+                <div class="formDesign" class="pincode">
+                <input type="number" name="email" id="name" placeholder="Pincode" required/>
                 <br><br>
+            </div>
                 <label>When was this organisation established:</label>
                 <br>
-                <input type="number" name="number" id="name" placeholder="Year of Establishment">
+                <div class="formDesign" class="year">
+                <input type="number" name="number" id="name" placeholder="Year of Establishment" required/>
                 <br><br>
-
+</div>
                 <label>Number of hours you can help us:</label>
                 <br>
                 <input type="number" name="number_of_hours" id="name" placeholder="Number of hours">
@@ -105,31 +114,38 @@
                 <br></br>
                 <label id="help">How do you want to help us?</label>
                 <br><br>
+                <div class="formDesign" class="money"></div>
                 &nbsp;&nbsp;
-                <input type="radio" name="help" id="money">
-                <span id="money">Money</span>
-                &nbsp;&nbsp;
+                <input type="radio" name="help" id="money" >
+            </div>
+            <span id="money">Money</span>
+            &nbsp;&nbsp;
+
+            <div class="formDesign" class="logistics">
                 <input type="radio" name="help" id="logistics">
                 <span id="logistics">Logistics</span>
                 <br></br>
-                <label>Upload a documental proof(*any authorised certificate proof is valid):</label>
-                <br>
-                <div id="new">
-                    <form name="" action="" method="">
-                    <input type="file" id="actual-btn" hidden/>
-                    <label for="actual-btn" id="actual-btn">Upload File</label>
-                    </form></div>
-                    <br><br>
-                    <div class="btn2">
-                        <form action="/Project/index1.html"><button class="mybttn b2"  type ="submit" onclick="clickbttn()">Register</button></form>
-                       </div>
-
-                </td>
             </div>
+            <label>Upload a documental proof(*any authorised certificate proof is valid):</label>
+            <br>
+            <div id="new">
+                <form name="" action="" method="">
+                    <input type="file" id="actual-btn" hidden />
+                    <label for="actual-btn" id="actual-btn">Upload File</label>
+                </form>
+            </div>
+            <br><br>
+            <div class="btn2">
+                <form action="/Project/index1.html"><button class="mybttn b2" type="submit"
+                        onclick="clickbttn()">Register</button></form>
+            </div>
+
+            </td>
         </div>
     </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="j_o.js"></script>
+    <script src="j_o.js"></script>
 </body>
 
 </html>

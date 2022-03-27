@@ -28,36 +28,46 @@
                 <div id="register">
                     <label>First name:</label>
                     <br>
-                    <input type="text" name="fname" id="f_name" placeholder="First Name" autocomplete="off"
-                        class="name">
-                    <span class="formerror"></span>
-                    <br><br>
-
+                    <div class="formDesign" id="fname">
+                        <input type="text" name="fname" id="f_name" placeholder="First Name" autocomplete="off"
+                            class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
                     <label>Last name:</label>
                     <br>
-                    <input type="text" name="lname" id="l_name" placeholder="Last Name" autocomplete="off" class="name">
-                    <span class="formerror"></span>
-                    <br><br>
+                    <div class="formDesign" id="lnamme">
+                        <input type="text" name="lname" id="l_name" placeholder="Last Name" autocomplete="off"
+                            class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
 
                     <label>Age:</label>
                     <br>
-                    <input type="text" name="age" id="a_name" placeholder="Age" autocomplete="off" class="name">
-                    <span class="formerror"></span>
-                    <br><br>
+                    <div class="formDesign" id="age">
+                        <input type="text" name="age" id="a_name" placeholder="Age" autocomplete="off" class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
 
                     <label>Email ID:</label>
                     <br>
-                    <input type="text" name="email" id="e_name" placeholder="Email ID" autocomplete="off" class="name">
-                    <span class="formerror"></span>
-                    <br><br>
+                    <div class="formDesign" id="email">
+                        <input type="text" name="email" id="e_name" placeholder="Email ID" autocomplete="off"
+                            class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
 
                     <label>Mobile Number:</label>
                     <br>
-                    <input type="text" name="number" id="m_name" placeholder="Mobile Number" autocomplete="off"
-                        class="name">
-                    <span class="formerror"></span>
-                    <br><br>
-
+                    <div class="formDesign" id="mbno.">
+                        <input type="text" name="number" id="m_name" placeholder="Mobile Number" autocomplete="off"
+                            class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
                     <label>State:</label>
                     <br>
                     <select id="states" name="states">
@@ -94,47 +104,61 @@
 
                     <br><br>
                     <label>Town,Street:</label>
-                    <input type="text" name="email" id="t_name" placeholder="Address Line 2" autocomplete="off"
-                        class="name">
-                    <span class="formerror"></span>
-                    <br><br>
+                    <div class="formDesign" class="town">
+                        <input type="text" name="email" id="t_name" placeholder="Address Line 2" autocomplete="off"
+                            class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
                     <label>Landmark,House/Block No.:</label>
-                    <input type="text" name="email" id="l_name" placeholder="Address Line 3" autocomplete="off"
-                        class="name">
-                    <span class="formerror"></span>
-                    <br><br>
+                    <div class="formDesign" class="house">
+                        <input type="text" name="email" id="l_name" placeholder="Address Line 3" autocomplete="off"
+                            class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
                     <label>Pincode:</label>
                     <br>
-                    <input type="number" name="email" id="p_name" placeholder="Address Line 3" autocomplete="off"
-                        class="name">
-                    <span class="formerror"><b></b></span>
-                    <br><br>
-
+                    <div class="formDesign" class="pincode">
+                        <input type="number" name="email" id="p_name" placeholder="Address Line 3" autocomplete="off"
+                            class="name">
+                        <span class="formerror"><b></b></span>
+                        <br><br>
+                    </div>
                     <label>Gender:</label>
                     <br>
                     &nbsp;&nbsp;
-                    <input type="radio" name="gender" id="male">
-                    <span id="male">Male</span>
-                    &nbsp;&nbsp;
-                    <input type="radio" name="gender" id="female">
-                    <span id="male">Female</span>
+                    <div class="formDesign" class="male">
+                        <input type="radio" name="gender" id="male">
+                        <span id="male">Male</span>
+                        &nbsp;&nbsp;
+                    </div>
+                    <div class="formDesign" class="female">
+                        <input type="radio" name="gender" id="female">
+                        <span id="male">Female</span>
 
-                    <br><br>
+                        <br><br>
+                    </div>
                     <label id="help">How do you want to help us?</label>
                     <br>
                     &nbsp;&nbsp;
-                    <input type="radio" name="help" id="money">
-                    <span id="money">Money</span>
-                    &nbsp;&nbsp;
-                    <input type="radio" name="help" id="logistics">
-                    <span id="logistics">Logistics</span>
+                    <div class="formDesign" class="money">
+                        <input type="radio" name="help" id="money">
+                        <span id="money">Money</span>
+                        &nbsp;&nbsp;
+                    </div>
+                    <div class="formDesign" class="logistics">
+                        <input type="radio" name="help" id="logistics">
+                        <span id="logistics">Logistics</span>
 
-                    <br><br>
+                        <br><br>
+                    </div>
                     <label class="birth">Birthday</label>
                     <br>
-                    <input type="date" id="birthday" name="birthday">
-                    <br></br>
-
+                    <div class="formDesign" class="birthday">
+                        <input type="date" id="birthday" name="birthday">
+                        <br></br>
+                    </div>
                     <label>Upload a documental proof :</label>
                     <br>
                     <div id="new">

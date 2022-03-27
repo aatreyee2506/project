@@ -1,5 +1,5 @@
 function myFunction(){
-    window.location.href="/Project/index1.html";
+    window.location.href="/Project/index1.html";  
 }
  
 function seterror(id,error){
