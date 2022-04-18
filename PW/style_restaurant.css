@@ -56,7 +56,7 @@ span{
     
 }
 
-input#name{
+input.name{
     width:600px;
     border: 1px solid #ddd;
     border-radius:  10px;

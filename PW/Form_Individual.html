@@ -24,9 +24,9 @@
             <h2 class="title">Register Here</h2>
 
 
-            <form action="/" method="post" onsubmit="return validation()" name="myForm" id="form">
+            <form action="/" type="post" onsubmit="return validateForm()" name="myForm" id="register" method="post">
                 <div id="register">
-                    <label>First name:</label>
+                    <label>First name*:</label>
                     <br>
                     <div class="formDesign" id="fname">
                         <input type="text" name="fname" id="f_name" placeholder="First Name" autocomplete="off"
@@ -36,22 +36,22 @@
                     </div>
                     <label>Last name:</label>
                     <br>
-                    <div class="formDesign" id="lnamme">
+                    <div class="formDesign" id="lname">
                         <input type="text" name="lname" id="l_name" placeholder="Last Name" autocomplete="off"
                             class="name">
                         <span class="formerror"></span>
                         <br><br>
                     </div>
 
-                    <label>Age:</label>
+                    <label>Age*:</label>
                     <br>
                     <div class="formDesign" id="age">
-                        <input type="text" name="age" id="a_name" placeholder="Age" autocomplete="off" class="name">
+                        <input type="text" name="age" id="age" placeholder="Age" autocomplete="off" class="name">
                         <span class="formerror"></span>
                         <br><br>
                     </div>
 
-                    <label>Email ID:</label>
+                    <label>Email ID*:</label>
                     <br>
                     <div class="formDesign" id="email">
                         <input type="text" name="email" id="e_name" placeholder="Email ID" autocomplete="off"
@@ -59,12 +59,35 @@
                         <span class="formerror"></span>
                         <br><br>
                     </div>
+                    <label>Username:</label>
+                    <br>
+                    <div class="formDesign" id="uname">
+                    <input type="text" name="email" class="name"  placeholder="Userame">
+                    <span class="formerror"></span>
+                    <br><br>
+                </div>
+                <label>Password:</label>
+                    <br>
+                    <div class="formDesign" id="pswd">
+                    <input type="password" name="pswd" class="name"  placeholder="Password" >
+                    <span class="formerror"></span>
+                    <br><br>
+                </div>
+                <label> Confirm Password:</label>
+                    <br>
+                    <div class="formDesign" id="cpswd">
+                    <input type="password" name="cpswd" class="name"  placeholder="Confirm Password" >
+                    <span class="formerror"></span>
+                    <br><br>
+                </div>
 
-                    <label>Mobile Number:</label>
+
+
+                    <label>Mobile Number*:</label>
                     <br>
                     <div class="formDesign" id="mbno.">
                         <input type="text" name="number" id="m_name" placeholder="Mobile Number" autocomplete="off"
-                            class="name">
+                            class="name" >
                         <span class="formerror"></span>
                         <br><br>
                     </div>
@@ -103,25 +126,25 @@
                     </select>
 
                     <br><br>
-                    <label>Town,Street:</label>
+                    <label>Town,Street*:</label>
                     <div class="formDesign" class="town">
                         <input type="text" name="email" id="t_name" placeholder="Address Line 2" autocomplete="off"
-                            class="name">
+                            class="name" >
                         <span class="formerror"></span>
                         <br><br>
                     </div>
-                    <label>Landmark,House/Block No.:</label>
+                    <label>Landmark,House/Block No.*:</label>
                     <div class="formDesign" class="house">
                         <input type="text" name="email" id="l_name" placeholder="Address Line 3" autocomplete="off"
-                            class="name">
+                            class="name" >
                         <span class="formerror"></span>
                         <br><br>
                     </div>
-                    <label>Pincode:</label>
+                    <label>Pincode*:</label>
                     <br>
                     <div class="formDesign" class="pincode">
                         <input type="number" name="email" id="p_name" placeholder="Address Line 3" autocomplete="off"
-                            class="name">
+                            class="name" >
                         <span class="formerror"><b></b></span>
                         <br><br>
                     </div>
@@ -129,7 +152,7 @@
                     <br>
                     &nbsp;&nbsp;
                     <div class="formDesign" class="male">
-                        <input type="radio" name="gender" id="male">
+                        <input type="radio" name="gender" id="male" >
                         <span id="male">Male</span>
                         &nbsp;&nbsp;
                     </div>
@@ -168,11 +191,11 @@
                         </form>
                     </div>
                     <br><br>
-                    <div class="btn1">
+                    <div class="btn1" >
 
-                        <form action="/Project/index1.html"><button class="mybttn b1" type="submit" value="submit"
-                                onclick="myFunction()">Register</button>
-                        </form>
+                        <input class="mybttn b1" type="submit" value="Register"
+                                >
+                        
                     </div>
 
                 </div>
@@ -180,7 +203,89 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="j_i.js"></script>
+   
 </body>
+<script>
+    function setError(id, error) {
+    //sets error inside tag of id 
+    element = document.getElementById(id);
+    element.getElementsByClassName("formerror")[0].innerHTML = error;
 
+}
+
+
+function validateForm() {
+
+    console.log("AAAgaya ");
+    var return_val = true;
+
+
+    var name = document.forms['myForm']['fname'].value;
+    var mob_no= document.forms['myForm']['number'].value;
+    var age =document.forms['myForm']['age'].value;
+
+    if (name.length == 0 ) {    
+      
+        setError("fname", "Please enter the name");
+        return false;
+    }
+    if(name.length<=2)
+    {
+        
+        setError("fname", "The name is too short");
+        return false;
+    }
+    
+
+   if(name.length>2){
+        setError("fname", "");
+
+   }
+if(age.length==0) {
+        
+        setError("age", "Please enter age");
+        return false;
+    }
+ 
+    if(age.length!=0) {
+        
+        setError("age", "");
+       
+    }
+    
+    
+    if (mob_no.length==0) {
+        
+        setError("mbno.", "Please enter mob number");
+        return false;
+    }
+
+   
+
+    if (mob_no.length<10) {
+        
+        setError("mbno.", "Please enter right mob number");
+        return false;
+    }
+
+    if (mob_no.length==10) {
+        
+        setError("mbno.", "");
+        
+    }
+ 
+ 
+    // var pswd=document.forms['myForm']['pas   sword'].value;
+    // if (pwsd.match(/^(?=[^A-Z]*[A-Z])(?=[^!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~]*[!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~])(?=\D*\d).{8,}$/)) {
+    //     return true;
+    // } else {
+    //     setError("password", "Please enter a valid passoword");
+    //     return false;
+    // }
+
+    return return_val;
+
+
+}
+</script>
 </html>
